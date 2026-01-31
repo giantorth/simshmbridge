@@ -52,6 +52,10 @@ size_t getSharedMemorySize(char* MemFileName)
     {
     	return AC_CREWCHIEF_SIZE;
     }
+    if(strcicmp(MemFileName, AC_SIMHUB_FILE) == 0)
+    {
+    	return AC_SIMHUB_SIZE;
+    }
 
     return 0;
 }

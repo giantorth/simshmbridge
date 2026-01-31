@@ -1,0 +1,15 @@
+all: assets/dummy.exe
+debug: assets/dummy.exe
+
+WINECC=x86_64-w64-mingw32-gcc
+CFLAGS=-Wall -Os
+
+debug: CFLAGS += -DDEBUG -g
+
+assets/dummy.exe: dummy.c
+	$(WINECC) $< $(CFLAGS) -mconsole -o $@
+
+clean:
+	rm -f assets/dummy.exe
+
+# vim: syntax=make ts=4 sw=4 sts=4 sr noet

@@ -44,12 +44,13 @@ LPCSTR filefind = "acpmf_*";
 // define a single file to use as a test to see if the game has initialized the shared memory
 LPCSTR file1 = AC_PHYSICS_FILE;
 
-int numfiles = 4;
+int numfiles = 5;
 const char* files[] =
 {
     AC_STATIC_FILE,
     AC_GRAPHIC_FILE,
     AC_CREWCHIEF_FILE,
+    AC_SIMHUB_FILE,
     AC_PHYSICS_FILE
 };
 
@@ -73,6 +74,10 @@ size_t getmemfilesize(const char* filename)
     if(strcmp(filename, AC_CREWCHIEF_FILE) == 0)
     {
         return AC_CREWCHIEF_SIZE;
+    }
+    if(strcmp(filename, AC_SIMHUB_FILE) == 0)
+    {
+        return AC_SIMHUB_SIZE;
     }
     if(strcmp(filename, "acpmf_secondMonitor") == 0)
     {

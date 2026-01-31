@@ -39,19 +39,19 @@ int main(int argc, char* argv[])
     char* memfile2 = AC_GRAPHIC_FILE;
     char* memfile3 = AC_STATIC_FILE;
     char* memfile4 = AC_CREWCHIEF_FILE;
-    char* memfile5 = "acpmf_secondMonitor";
+    char* memfile5 = AC_SIMHUB_FILE;
 
     int datasize1 = AC_PHYSICS_SIZE;
     int datasize2 = AC_GRAPHIC_SIZE;
     int datasize3 = AC_STATIC_SIZE;
     int datasize4 = AC_CREWCHIEF_SIZE;
-    int datasize5 = AC_CREWCHIEF_SIZE;
+    int datasize5 = AC_SIMHUB_SIZE;
 
 #define MEMFILECNT1
 #define MEMFILECNT2
 #define MEMFILECNT3
 #define MEMFILECNT4
-//#define MEMFILECNT5
+#define MEMFILECNT5
 
 #endif
 #ifdef RFACTOR2
